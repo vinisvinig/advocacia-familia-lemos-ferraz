@@ -207,7 +207,7 @@ html:not(.js) .faixas{display:none}
 .topo h2 em{color:var(--terra)}
 .topo p{max-width:340px;color:var(--cinza);line-height:1.55;font-size:16px}
 .grade{margin-top:clamp(44px,6vw,80px);display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha)}
-.card{position:relative;display:flex;flex-direction:column;min-height:clamp(330px,26vw,400px);padding:26px clamp(20px,2vw,34px) 28px;border-bottom:1px solid var(--linha);border-right:1px solid var(--linha);overflow:hidden;isolation:isolate;transition:color .45s}
+.card{position:relative;display:flex;flex-direction:column;min-height:clamp(250px,19vw,300px);padding:26px clamp(20px,2vw,34px) 28px;border-bottom:1px solid var(--linha);border-right:1px solid var(--linha);overflow:hidden;isolation:isolate;transition:color .45s}
 .card:nth-child(3n){border-right:0}
 .card::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--terra);clip-path:inset(100% 0 0 0);transition:clip-path .6s var(--ease-io)}
 .card:hover,.card:focus-within{color:var(--papel)}
@@ -216,7 +216,7 @@ html:not(.js) .faixas{display:none}
 .card .n span:last-child{opacity:.55}
 .card h3{margin-top:clamp(30px,3.5vw,54px);font-family:Fraunces;font-weight:480;font-variation-settings:"opsz" 36;font-size:clamp(28px,2.3vw,39px);line-height:1.08;letter-spacing:-.012em}
 .card p{margin-top:auto;padding-top:24px;font-size:16px;line-height:1.55;max-width:36ch}
-.card a{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600}
+.card a{margin-top:auto;padding-top:24px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600}
 .card a::after{content:"";position:absolute;inset:0}
 .card a svg{width:16px;height:16px;transition:transform .4s var(--ease)}
 .card:hover a svg{transform:translateX(5px)}
@@ -234,13 +234,17 @@ html:not(.js) .faixas{display:none}
 .socio .nome i{display:block;font-weight:400;color:var(--terra)}
 .socio .foto img{z-index:1}
 @media (max-width:860px){.socio .nome{font-size:44px}.socio .foto img{left:66%;height:88%}}
-.socio .info{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;padding-top:20px}
+.socio .info{padding-top:18px}
 .socio .info .rotulo{color:var(--terra)}
 .socio .info b{display:block;margin-top:8px;font-weight:600}
 .socio .info p{font-family:Fraunces;font-style:italic;font-weight:420;font-size:clamp(19px,1.45vw,23px);line-height:1.3;letter-spacing:-.01em}
 
 .socio .oab{display:block;margin-top:4px;font-size:14px;color:var(--cinza);font-weight:500}
 /* avaliações */
+.aval-linha{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:40px;padding-top:24px;border-top:1px solid var(--linha);font-size:16px}
+.aval-linha .estrelas{color:var(--terra);letter-spacing:2px;font-size:18px;margin:0}
+.aval-linha span:last-child{color:var(--cinza)}
+.aval-linha:hover b{text-decoration:underline}
 .aval{margin-top:clamp(60px,7vw,100px);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,4vw,72px);border-top:1px solid var(--linha);padding-top:32px}
 .nota b{display:block;font-family:Fraunces;font-weight:450;font-size:clamp(72px,7vw,120px);line-height:.9;letter-spacing:-.03em}
 .estrelas{display:flex;gap:4px;margin-top:12px;color:var(--terra)}
@@ -368,7 +372,6 @@ html:not(.js) .faixas{display:none}
   .enviar{height:46px;padding:0 16px}
   .enviar span{display:none}
   .sigilo{left:12px;right:12px;bottom:12px;width:auto}
-  .hero{padding-bottom:74px}
   .sigilo.aberto{width:auto}
   .aviso{bottom:84px}
 }
@@ -385,7 +388,6 @@ html:not(.js) .faixas{display:none}
   <nav class="nav-dir" aria-label="Seções">
     <a href="#areas">Áreas</a>
     <a href="#quem">Quem responde</a>
-    <a href="#contato">Primeiro contato</a>
     <a href="#onde">Onde</a>
   </nav>
   </div>
@@ -415,7 +417,7 @@ html:not(.js) .faixas{display:none}
 
     <div class="base">
       <h1 class="surge" style="--d:2"><strong>Advocacia de família em Gravataí e Porto Alegre.</strong> Por vídeo ou WhatsApp até as 23h, com sigilo desde a primeira mensagem.</h1>
-      <div class="acoes surge" style="--d:2"><a href="#pergunte" class="btn" data-wa="Olá! Gostaria de conversar em sigilo sobre um assunto de família."><svg class="fecho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9.2"/><circle cx="12" cy="10" r="2.3"/><path d="M12 12.3v4.2" stroke-linecap="round"/></svg>Falar no WhatsApp em sigilo</a><small>Quem responde é advogado, no mesmo dia.</small></div>
+      <div class="acoes surge" style="--d:2"><a href="#pergunte" class="btn" data-wa="Olá! Gostaria de conversar em sigilo sobre um assunto de família."><svg class="fecho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9.2"/><circle cx="12" cy="10" r="2.3"/><path d="M12 12.3v4.2" stroke-linecap="round"/></svg>Falar no WhatsApp em sigilo</a><small>Quem responde é advogado.</small></div>
       <div class="faixas surge" style="--d:3" id="faixas">
         <ol></ol>
         <button class="pausa" id="pausa" aria-label="Pausar a animação"><svg class="pa" viewBox="0 0 12 12" fill="currentColor"><rect x="2" y="1.5" width="2.6" height="9" rx=".6"/><rect x="7.4" y="1.5" width="2.6" height="9" rx=".6"/></svg><svg class="play" viewBox="0 0 12 12" fill="currentColor"><path d="M3 1.6v8.8L10.4 6z"/></svg></button>
@@ -436,74 +438,45 @@ html:not(.js) .faixas{display:none}
 <section class="mesa pad" aria-label="Sigilo e horário">
   <h2 id="mesaFrase">Toda família tem um assunto que não se fala <em>na mesa do jantar.</em></h2>
   <div class="tres">
-    <div class="sobe" style="--d:0"><span class="rotulo">Até as 23h</span><h3>Depois que as crianças dormirem.</h3><p>Primeira conversa por vídeo ou WhatsApp, de segunda a sábado, das 8h às 23h. Sem precisar sair do trabalho nem explicar aonde vai.</p></div>
-    <div class="sobe" style="--d:1"><span class="rotulo">Sigilo</span><h3>Só você e quem te atende.</h3><p>Sigilo profissional desde a primeira mensagem. Você escolhe o canal, o horário e se a gente pode ligar ou só escrever.</p></div>
-    <div class="sobe" style="--d:2"><span class="rotulo">Presencial, se quiser</span><h3>Gravataí ou Porto Alegre.</h3><p>Atendimento presencial nos dois endereços, com hora marcada, para quando chegar a hora de assinar ou de conversar olho no olho.</p></div>
-  </div>
-</section>
-
-<section class="contato pad" id="contato">
-  <div class="topo">
-    <h2 class="sobe">Como é o <em>primeiro contato.</em></h2>
-    <p class="sobe" style="--d:1">Sem formulário, sem atendente e sem precisar contar tudo de uma vez.</p>
-  </div>
-  <div class="contato-grade">
-    <button class="video sobe" id="video" aria-label="Assistir: a Dra. Marina explica como é a primeira conversa (1 minuto)">
-      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-de="fotoMarina" alt="" width="764" height="1100">
-      <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.8v16.4L20 12z"/></svg></span>
-      <span class="cap"><b>“Como é a primeira conversa”</b><span>Dra. Marina Lemos · 1 min</span></span>
-    </button>
-    <div>
-      <ol class="passos">
-        <li class="sobe"><span class="num">1</span><div><h3>Você escreve do seu jeito.</h3><p>Pelo WhatsApp ou pelo campo deste site, a qualquer hora. Pode ser uma frase só. Não precisa mandar documento agora.</p></div></li>
-        <li class="sobe" style="--d:1"><span class="num">2</span><div><h3>Quem responde é advogado.</h3><p><b>A Dra. Marina ou o Dr. Otávio</b>, conforme o assunto. Nunca um robô. Retorno no mesmo dia, das 8h às 23h. Mensagem enviada de madrugada é respondida a partir das 8h.</p></div></li>
-        <li class="sobe" style="--d:2"><span class="num">3</span><div><h3>Uma conversa de 30 minutos.</h3><p>Por vídeo ou num dos escritórios. Você entende os caminhos possíveis e decide com calma se quer seguir.</p></div></li>
-      </ol>
-      <p class="selo sobe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9.2"/><circle cx="12" cy="10" r="2.3"/><path d="M12 12.3v4.2" stroke-linecap="round"/></svg><span><b>Sigilo profissional desde a primeira mensagem.</b> É dever do advogado, previsto no Estatuto da Advocacia e no Código de Ética da OAB. Você escolhe se a gente pode ligar ou só escrever.</span></p>
-    </div>
+    <div class="sobe" style="--d:0"><span class="rotulo">Até as 23h</span><h3>Por vídeo ou WhatsApp, até depois que as crianças dormirem.</h3></div>
+    <div class="sobe" style="--d:1"><span class="rotulo">Sigilo</span><h3>Só você e quem te atende lê a conversa.</h3></div>
+    <div class="sobe" style="--d:2"><span class="rotulo">Presencial, se quiser</span><h3>Com hora marcada em Gravataí ou Porto Alegre.</h3></div>
   </div>
 </section>
 
 <section class="areas pad" id="areas">
   <div class="topo">
     <h2 class="sobe">Perguntas que chegam <em>toda semana.</em></h2>
-    <p class="sobe" style="--d:1">Seis assuntos, uma área de atuação: família. Escolha a pergunta que mais parece com a sua e mande do jeito que ela estiver.</p>
   </div>
   <div class="grade" id="grade">
     <article class="card sobe" style="--d:0">
       <div class="n"><span>Divórcio</span><span>01</span></div>
       <h3>Quero me separar. Por onde eu começo?</h3>
-      <p>Consensual ou litigioso, em cartório ou na Justiça. A gente explica cada caminho antes de você decidir qualquer coisa.</p>
       <a href="#pergunte" data-wa="Olá! Quero me separar. Por onde eu começo? (Divórcio)">Perguntar isso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="card sobe" style="--d:1">
       <div class="n"><span>Guarda e convivência</span><span>02</span></div>
       <h3>Como fica a rotina dos nossos filhos?</h3>
-      <p>Guarda, visitas, férias e mudança de cidade, organizados pensando primeiro nas crianças.</p>
       <a href="#pergunte" data-wa="Olá! Como fica a rotina dos nossos filhos? (Guarda e convivência)">Perguntar isso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="card sobe" style="--d:2">
       <div class="n"><span>Pensão alimentícia</span><span>03</span></div>
       <h3>A pensão atrasou de novo. E agora?</h3>
-      <p>Pedir, revisar ou cobrar pensão, a partir dos documentos que você já tem em mãos hoje.</p>
       <a href="#pergunte" data-wa="Olá! A pensão atrasou de novo. E agora? (Pensão alimentícia)">Perguntar isso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="card sobe" style="--d:0">
       <div class="n"><span>União estável</span><span>04</span></div>
       <h3>Moramos juntos há anos. Isso conta?</h3>
-      <p>Reconhecer, formalizar ou encerrar uma união estável, com contrato antes ou partilha depois.</p>
       <a href="#pergunte" data-wa="Olá! Moramos juntos há anos. Isso conta? (União estável)">Perguntar isso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="card sobe" style="--d:1">
       <div class="n"><span>Inventário e partilha</span><span>05</span></div>
       <h3>Alguém faleceu e ninguém sabe o que fazer.</h3>
-      <p>Inventário em cartório quando a família concorda, na Justiça quando não. Com calma e um passo de cada vez.</p>
       <a href="#pergunte" data-wa="Olá! Alguém faleceu e ninguém sabe o que fazer. (Inventário e partilha)">Perguntar isso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="card sobe" style="--d:2">
       <div class="n"><span>Testamento</span><span>06</span></div>
       <h3>Quero deixar tudo organizado em vida.</h3>
-      <p>Testamento, doação e planejamento sucessório, para a sua vontade ficar clara e evitar disputa depois.</p>
       <a href="#pergunte" data-wa="Olá! Quero deixar tudo organizado em vida. (Testamento)">Perguntar isso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
   </div>
@@ -512,44 +485,27 @@ html:not(.js) .faixas{display:none}
 <section class="quem pad" id="quem">
   <div class="topo">
     <h2 class="sobe">Quem lê a sua <em>mensagem.</em></h2>
-    <p class="sobe" style="--d:1">Dois sócios, cada um em uma cidade. Quem responde no WhatsApp é quem acompanha o seu caso até o fim.</p>
   </div>
   <div class="duo">
     <article class="socio sobe">
       <div class="foto"><span class="nome">Marina<i>Lemos</i></span><img src="assets/marina.webp" alt="Retrato da Dra. Marina Lemos" width="764" height="1100" loading="lazy"></div>
       <div class="info">
         <div><span class="rotulo">Sócia · Gravataí</span><b>Dra. Marina Lemos Ribeiro</b><span class="oab">OAB/RS 00.000 · divórcio, guarda e pensão</span></div>
-        <p>“A primeira conversa serve para você entender as opções. A decisão continua sendo sua.”</p>
       </div>
     </article>
     <article class="socio sobe" style="--d:1">
       <div class="foto"><span class="nome">Otávio<i>Ferraz</i></span><img src="assets/otavio.webp" alt="Retrato do Dr. Otávio Ferraz" width="845" height="1100" loading="lazy"></div>
       <div class="info">
         <div><span class="rotulo">Sócio · Porto Alegre</span><b>Dr. Otávio Ferraz Nunes</b><span class="oab">OAB/RS 00.000 · inventário, testamento e união estável</span></div>
-        <p>“Herança não precisa virar briga. Quase sempre dá para organizar antes.”</p>
       </div>
     </article>
   </div>
-  <div class="aval">
-    <div class="nota sobe">
-      <b>4,9</b>
-      <div class="estrelas" role="img" aria-label="Nota 4,9 de 5"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></div>
-      <p>Média de 87 avaliações públicas no Google, nos dois endereços.</p>
-      <a href="https://www.google.com/maps/search/?api=1&query=Lemos+Ferraz+Advocacia+de+Fam%C3%ADlia" target="_blank" rel="noopener">Ver avaliações no Google</a>
-    </div>
-    <div class="trechos">
-      <figure class="sobe"><blockquote>“Me respondeu no mesmo dia, de noite, e explicou tudo sem juridiquês.”</blockquote><figcaption><b>Carla M.</b> · Google</figcaption></figure>
-      <figure class="sobe" style="--d:1"><blockquote>“Eu tinha vergonha de perguntar. Fui tratada com respeito do começo ao fim.”</blockquote><figcaption><b>Juliana R.</b> · Google</figcaption></figure>
-      <figure class="sobe" style="--d:2"><blockquote>“Fiz todas as conversas por vídeo, sem precisar faltar no trabalho.”</blockquote><figcaption><b>Anderson P.</b> · Google</figcaption></figure>
-    </div>
-    <p class="obs">Trechos sobre o atendimento, publicados pelos próprios clientes. Por ética, não divulgamos casos nem resultados.</p>
-  </div>
+  <a class="aval-linha sobe" href="https://www.google.com/maps/search/?api=1&query=Lemos+Ferraz+Advocacia+de+Fam%C3%ADlia" target="_blank" rel="noopener"><span class="estrelas" aria-hidden="true">★★★★★</span><b>4,9 no Google</b><span>87 avaliações nos dois endereços</span></a>
 </section>
 
 <section class="onde pad" id="onde">
   <div class="topo">
     <h2 class="sobe">Dois endereços. <em>E o seu sofá.</em></h2>
-    <p class="sobe" style="--d:1">Atendemos Gravataí, Porto Alegre e região metropolitana. Por vídeo, de qualquer lugar.</p>
   </div>
   <div class="locais">
     <div class="local sobe"><span class="rotulo">Escritório</span><h3>Gravataí</h3><p><b>Av. Dorival Cândido Luz de Oliveira, 2140, sala 604</b><br>Centro · seg a sex, 9h às 18h</p><a href="https://www.google.com/maps/search/?api=1&query=Av.+Dorival+C%C3%A2ndido+Luz+de+Oliveira+Gravata%C3%AD" target="_blank" rel="noopener">Como chegar</a></div>
@@ -568,7 +524,7 @@ html:not(.js) .faixas{display:none}
   <small class="sobe" style="--d:2">Sua mensagem vai direto para o WhatsApp do escritório. Resposta até as 23h, de segunda a sábado.</small>
 
   <footer class="rodape">
-    <div><p><b>Lemos &amp; Ferraz Sociedade de Advogados</b> · OAB/RS 0.000 · Gravataí e Porto Alegre, RS.<br>Dra. Marina Lemos Ribeiro, OAB/RS 00.000 · Dr. Otávio Ferraz Nunes, OAB/RS 00.000.<br>Conteúdo informativo. Cada caso depende de análise individual.</p><span class="conforme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.2 4.2L19 7"/></svg>De acordo com o Provimento 205/2021 do CFOAB</span></div>
+    <div><p><b>Lemos &amp; Ferraz Sociedade de Advogados</b> · OAB/RS 0.000 · Gravataí e Porto Alegre, RS</p><span class="conforme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.2 4.2L19 7"/></svg>De acordo com o Provimento 205/2021 do CFOAB</span></div>
     <p>Conceito de portfólio: escritório, pessoas e endereços fictícios. Fotos: Pexels.</p>
   </footer>
 </section>
@@ -591,8 +547,6 @@ html:not(.js) .faixas{display:none}
 <script>
 /* Número do WhatsApp do escritório: só dígitos, ex.: '5551999999999'. Vazio = modo demonstração. */
 const WHATSAPP = '';
-/* Vídeo curto da advogada (mp4 até 1 min, ou link do YouTube). Vazio = aviso de demonstração. */
-const VIDEO = '';
 
 const AREAS = [
   {area:'Divórcio', q:'como pedir divórcio sem brigar', card:'Quero me separar. Por onde eu começo?',
@@ -709,24 +663,14 @@ document.querySelectorAll('.sobe,#mesaFrase').forEach(el=>io.observe(el));
 /* ---------- Barra fixa ---------- */
 const sig=$('#sigilo');
 let heroVis=true, fimVis=false;
-const cel=matchMedia('(max-width:860px)');
-const ajusta=()=>sig.classList.toggle('vis',((cel.matches||!heroVis) && !fimVis) || sig.classList.contains('aberto'));
-new IntersectionObserver(es=>{heroVis=es[0].isIntersecting;ajusta()},{threshold:.35}).observe($('#topo'));
+const ajusta=()=>sig.classList.toggle('vis',(!heroVis && !fimVis) || sig.classList.contains('aberto'));
+const acoes=$('.acoes'); const naHero=()=>{heroVis=acoes.getBoundingClientRect().bottom>0;ajusta()}; addEventListener('scroll',naHero,{passive:true}); naHero();
 new IntersectionObserver(es=>{fimVis=es[0].isIntersecting;ajusta()},{threshold:.25}).observe($('#campoFim'));
 $('#abreSigilo').addEventListener('click',()=>{sig.classList.add('aberto');setTimeout(()=>$('#inSigilo').focus(),250)});
 $('#fechaSigilo').addEventListener('click',()=>{sig.classList.remove('aberto');ajusta()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&sig.classList.contains('aberto')){sig.classList.remove('aberto');ajusta()}});
 $('#formSigilo').addEventListener('submit',e=>{e.preventDefault();whats($('#inSigilo').value)});
 $('#campoFim').addEventListener('submit',e=>{e.preventDefault();whats($('#inFim').value)});
-
-$('#video').addEventListener('click',()=>{
-  if(!VIDEO){avisa('Demonstração: aqui entra um vídeo curto da advogada explicando como funciona o atendimento.');return}
-  const v=$('#video'); if(v.querySelector('video,iframe')) return;
-  const yt=VIDEO.match(/(?:youtu\.be\/|v=|shorts\/)([\w-]{11})/);
-  v.insertAdjacentHTML('beforeend', yt
-    ? '<iframe src="https://www.youtube-nocookie.com/embed/'+yt[1]+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3"></iframe>'
-    : '<video src="'+VIDEO+'" controls autoplay playsinline></video>');
-});
 
 addEventListener('load',()=>document.documentElement.classList.add('carregado'));
 setTimeout(()=>document.documentElement.classList.add('carregado'),1500);

@@ -14,6 +14,5 @@ Para ligar o WhatsApp de verdade, preencha `const WHATSAPP = ''` no `index.html`
 ## Para adaptar a um escritório real
 
 - Trocar nomes, números da OAB (`OAB/RS 00.000`), endereços e telefone, também no bloco `application/ld+json` do `<head>` (SEO local).
-- Nota e trechos de avaliações: usar só os reais, do perfil do Google, falando do atendimento (nunca de casos ou resultados).
-- Vídeo da advogada: preencher `const VIDEO = ''` com um .mp4 ou link do YouTube.
+- Nota do Google: usar a real do perfil do escritório.
 - Lighthouse mobile (versão publicada): desempenho 97, acessibilidade 100, boas práticas 100, SEO 100.
